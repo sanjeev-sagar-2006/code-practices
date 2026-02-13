@@ -1,11 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello !</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{background: #192442; background: radial-gradient(circle, rgba(25, 36, 66, 1) 0%, rgba(7, 13, 29, 1) 100%);}
+        .mynav{color: #fff; border-bottom: 1px solid #8790a1; padding: 8px 0px; height: 54px;}
+        .mynav .row{align-items: baseline;}
+        .mynav p{margin: 0px;}
+        .mynav .sec1 p{font-weight: 700;}
+        .mynav .sec1 p span{color: #e16c1d;}
+        .mynav .sec2 .nav{justify-content: center;}
+        .mynav .sec2 li a{color: #8790a1; font-size: 14px; transition: 0.3s;}
+        .mynav .sec2 li a:hover{color: #e16c1d; transform: translateY(-1px); transition: 0.3s;}
+        .mynav .sec3{text-align: end;}
+        .mynav .sec3 .icon{font-size: 14px; color: #8790a1; border: 1px solid #8790a1; padding: 5px 15px; border-radius: 15px; transition: 0.3s;}
+        .mynav .sec3 .icon:hover{color: #e16c1d; transition: 0.3s; border-color: #e16c1d;}
+        .mynav .sec3 .icon span{background-color: #e16c1d; padding: 0px 5px; border-radius: 20px; color: #000; margin-left: 5px;}
+    </style>
+
+    <div class="mynav">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="sec1">
+                        <p>URBAN<span>THREADS</span></p>
+                    </div>
+                </div>
+                <div class="col-6">
+                     <div class="sec2">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Order</a>
+                            </li>
+                        </ul>
+                     </div>
+                </div>
+                <div class="col-3">
+                    <div class="sec3">
+                        <span class="icon"><i class="fa-solid fa-cart-arrow-down"></i><span>0</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <style>
+        .mybanner{color: #fff; display: flex; align-items: center; height: 450px;}
+        .mybanner .sec1 h1{font-size: 3.2rem; font-weight: 700;}
+        .mybanner .sec1 p{color: #8790a1; margin-top: 13px;}
+        .mybanner .sec1 .btn1{padding: 8px 20px; border-radius: 25px; background: #F17776; background: linear-gradient(304deg, rgba(241, 119, 118, 1) 0%, rgba(253, 113, 26, 1) 100%); box-shadow:10px 5px 30px #F17776; border: none; margin-right: 5px; transition: 0.3s;}
+        .mybanner .sec1 .btn1:hover{color: #fff; transition: 0.3s; filter: hue-rotate(-20deg); text-shadow: 2px 2px 4px black;}
+        .mybanner .sec1 .btn2{padding: 8px 20px; border-radius: 25px; color: #fff; background: transparent; border: 1px solid #8790a1; transition: 0.3s;}
+        .mybanner .sec1 .btn2:hover{color: #000; box-shadow: inset 10px 20px 40px #F17776; transition: 0.3s;}
+        .mybanner .rating{margin-top: 10px;}
+        .mybanner .rating p{color: #fff; font-weight: 600; margin-right: 20px;}
+        .mybanner .rating p span{color: #8790a1; font-weight: normal; font-size: 14px;}
+        .mybanner .sec2 .box1{padding: 15px 25px; width: 450px; margin-left: 17%; margin-top: 30px; border-radius: 15px; background: #1A3FB1; background: linear-gradient(120deg, rgba(26, 63, 177, 1) 0%, rgba(3, 6, 23, 1) 40%); border: 1px solid #8790a1; transition: 0.3s;}
+        .mybanner .sec2 .box1:hover{box-shadow: 2px 2px 20px rgba(26, 63, 177, 1); transition: 0.3s;}
+        .mybanner .sec2 .box1 h3{font-weight: 700; font-size: 16px; color: #fff;}
+        .mybanner .sec2 .box1 p{color: #8790a1; font-size: 12px;}
+        .mybanner .sec2 .box1 a{font-size: 12px; color: #e16c1d; text-decoration: none; background: #24213ea1; padding: 6px 12px; border-radius: 15px; transition: 0.3s;}
+        .mybanner .sec2 .box1 a:hover{box-shadow: inset 2px 5px 20px #e16c1d; transition: 0.3s;}
+        .mybanner .sec2 .box2{padding: 15px 25px; width: 450px; margin-left: 17%; margin-top: 30px; border-radius: 15px; background: #1A3FB1; position: relative; left: 30px; top: -15px; background: linear-gradient(70deg, rgb(0, 0, 0) 50%, rgb(0, 224, 75) 100%); border: 1px solid #8790a1; transition: 0.3s;}
+        .mybanner .sec2 .box2:hover{box-shadow: 2px 2px 20px rgba(0, 224, 75, 1); transition: 0.3s;}
+        .mybanner .sec2 .box2 h3{font-weight: 700; font-size: 16px; color: #fff;}
+        .mybanner .sec2 .box2 p{color: #8790a1; font-size: 12px; margin-bottom: 10px;}
+
+    </style>
+
+    <div class="mybanner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="sec1">
+                        <h1>Elevate Your Everyday Style</h1>
+                        <p>Discover premium garments crafted for comfort and<br>confidence. From streetwear to classics, we have outfits for<br>every mood and moment.</p>
+                        <button class="btn1">Shop Collection</button>
+                        <button class="btn2">Quick Order</button>
+                        <div class="rating d-flex">
+                            <p>5000+<br><span>Happy Customers</span></p>
+                            <p>350+<br><span>New Arrivals</span></p>
+                            <p>4.9<br><span>Average Rating</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sec2">
+                        <div class="box1">
+                            <h3>Street Essentials</h3>
+                            <p>Oversized tees, relaxed denims, and everyday fits.</p>
+                            <a href="">NEW DROP</a>
+                        </div>
+                        <div class="box2">
+                            <h3>Minimal Classics</h3>
+                            <p>Crisp shirts, smart trousers & timeless layers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <style>
+        .coll{color: #fff; height: 550px; display: flex; align-items: center;}
+        .coll .sec1{text-align: center;}
+        .coll .sec1 h2{font-size: 26px;}
+        .coll .sec1 p{color: #8790a1; font-size: 14px;}
+        .coll .card1{width: 100%; height: 345px; border: 1px solid #8790a1; border-radius: 15px; background-color: #0e172841; backdrop-filter: blur(1px); transition: 0.3s;}
+        .coll .card1:hover{transform: translateY(-2px); box-shadow: 1px 1px 2px #fff; transition: 0.3s;}
+        .coll .card1 .box{width: 100%; height: 170px; border-radius: 15px 15px 0px 0px;}
+        .coll .card1 h3{font-size: 16px; padding: 8px 10px; margin: 0px;}
+        .coll .card1 p{font-size: 14px; color: #8790a1; padding: 0px 10px; margin-bottom: 8px;}
+        .coll .card1 .span1{padding: 0px 10px; font-size: 14px; font-weight: 500;}
+        .coll .card1 .span2{color: #e16c1d; font-size: 10px; padding: 2px 8px; border-radius: 12px; background: #e16b1d28; position: relative; left: 6.6rem;}
+        .coll .card1 a{text-align: center; margin: 0px 10px; padding: 10px 81px; border-radius: 30px; position: relative; top: 16px; text-decoration: none; color: black; font-size: 14px; font-weight: 500;background: linear-gradient(90deg, rgb(0 226 71) 0%, rgb(182 255 0) 100%); box-shadow: 2px 4px 20px #00ff0e; transition: 0.3s;}
+        .coll .card1 a:hover{color: #fff; filter: hue-rotate(20deg); text-shadow: 1px 1px 5px black;transition: 0.3s;}
+        
+    </style>
+
+    <div class="coll">
+        <div class="container">
+            <div class="sec1">
+                <h2>Featured Collection</h2>
+                <p>Handpicked garments loved by our customers this season.</p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card1">
+                        <div class="box" style="background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 22, 219) 100%);"></div>
+                        <h3>Oversized Hoodie</h3>
+                        <p>Soft fleece fabric with a relaxed<br>fit for all-day comfort</p>
+                        <span class="span1">$59.00</span>
+                        <span class="span2">BEST SELLER</span><br>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card1">
+                        <div class="box" style="background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(252, 77, 9) 100%);"></div>
+                        <h3>Classic White Shirt</h3>
+                        <p>Cotton-rich tailored fit that paris<br>with everything.</p>
+                        <span class="span1">$45.00</span>
+                        <span class="span2" style="color: #00e000; background: #00e00038; left: 7.7rem;">LIMITED</span><br>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card1">
+                        <div class="box" style="background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 132, 255) 100%);"></div>
+                        <h3>Relaxed Denim</h3>
+                        <p>Mid-wash jeans with a relaxed<br>tapered sithourtte.</p>
+                        <span class="span1">$69.00</span>
+                        <span class="span2" style="left: 8.7rem;">NEW</span><br>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card1">
+                        <div class="box" style="background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 187, 72) 100%);"></div>
+                        <h3>Everyday joggers</h3>
+                        <p>Stratch joggers with zip pockets<br>and cuffed hems.</p>
+                        <span class="span1">$49.00</span>
+                        <span class="span2" style="color: #00e000; background: #00e00038; left: 7rem;">TRENDING</span><br>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <style>
+        .cust{color: #fff; display: flex; align-items: center; height: 380px;}
+        .cust .sec1{text-align: center;}
+        .cust .sec1 h3{font-size: 26px;}
+        .cust .sec1 p{color: #8790a1; font-size: 14px;}
+        .cust .box1{width: 100%; height: 180px; background-color: #232d46d1; border-radius: 15px; border: 1px solid #8790a1; padding: 18px; transition: 0.3s;}
+        .cust .box1:hover{transform: translateY(-2px); box-shadow: 1px 1px 5px #fff; transition: 0.3s;}
+        .cust .box1 .name-a{padding: 8px 14px; border-radius: 40px; background-color: #16aac6; font-weight: 600; position: relative; top: 12px;}
+        .cust .box1 .msg{font-weight: 600; position: relative; left: 10px; font-size: 15px;}
+        .cust .box1 .rat{font-weight: 600; position: relative; left: 40px; font-size: 15px; color: gold;}
+        .cust .box1 p{font-size: 13px; color: #8790a1; margin-bottom: 8px; margin-top: 8px;}
+        .cust .box1 a{font-size: 13px; color: #8494e1; text-decoration: none; font-weight: 600; transition: 0.3s;}
+        .cust .box1 a:hover{text-shadow: 0px 0px 1px white; transition: 0.3s;}
+    </style>
+
+    <div class="cust">
+        <div class="container">
+            <div class="sec1">
+                <h3>What Our Customers Say</h3>
+                <p>Real reviews from people who love wearing UrbanThreads.</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="box1">
+                        <span class="name-a">A</span><span class="msg">Arjun Mehta<br><span class="rat">*****</span></span>
+                        <p>The oversized hoodies are insane! Super soft,<br>great fit and the colors stay bright even after<br>multiple washes.</p>
+                        <a href="">OVERSIZED HOODIES</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box1">
+                        <span class="name-a">S</span><span class="msg">Sana Kapoor<br><span class="rat">*****</span></span>
+                        <p>Love the minimal shirts, Perfact for collage<br>and semi-formals. the fabric feels premium.</p>
+                        <a href="">CLASSIC WHITE SHIRT</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box1">
+                        <span class="name-a">R</span><span class="msg">Rohit Singh<br><span class="rat">*****</span></span>
+                        <p>The Joggers are my go-to now. Great Stretch<br>and very comfortable for travel and workouts.</p>
+                        <a href="">EVERYDAY JOGGERS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <style>
+        .order{color: #fff; display: flex; align-items: center; height: 640px; background-color: #0000006c;}
+        .order .sec1 span{font-weight: 700; position: relative; bottom: 4px; margin-right: 5px; color: #30a072;}
+        .order .sec1 h2{font-size: 26px; font-weight: 600;}
+        .order .sec1 p{font-size: 14px; color: #8790a1;}
+        .order .sec2 form{border: 1px solid #8790a1; padding: 20px; background-color: #202a42; border-radius: 15px;}
+        .order .sec2 form label{color: #8790a1; font-size: 14px;}
+        .order .sec2 form input{width: 100%; border-radius: 8px; height: 35px; background: transparent; border: 1px solid #8790a1; padding-left: 10px; color: #ffffff; margin: 5px 0px; transition: 0.3s;}
+        .order .sec2 form input:hover{box-shadow: 2px 2px 4px #8494e1; transition: 0.3s;}
+        .order .sec2 form select{width: 100%; height: 35px; border-radius: 8px; background: 
+            transparent;border: 1px solid #8790a1; padding-left: 10px; color: white; margin: 5px 0px;}
+            .order .sec2 form select:hover{box-shadow: 2px 2px 4px #8494e1; transition: 0.3s;}
+        .order .sec2 form textarea{width: 100%; height: 70px; background: transparent; border-radius: 8px; border: 1px solid #8790a1; color: white; padding-left: 10px;}
+        .order .sec2 form textarea:hover{box-shadow: 2px 2px 4px #8494e1; transition: 0.3s;}
+        .order .sec2 form .size1{width: 25%; margin: 5px 0px; margin-right: 100px;}
+        .order .sec2 form .size1:hover{box-shadow: 2px 2px 4px #8494e1; transition: 0.3s;}
+        .order .sec2 form .qnt{width: 25%; margin: 5px 0px;}
+        .order .sec2 form .qnt:hover{box-shadow: 2px 2px 4px #8494e1; transition: 0.3s;}
+        .order .sec2 form .btn1{width: 100%; height: 45px; background: linear-gradient(304deg, rgba(241, 119, 118, 1) 0%, rgba(253, 113, 26, 1) 100%); box-shadow: 2px 5px 24px rgba(241, 119, 118, 1); margin-top: 7px; filter: contrast(1.5); border-radius: 25px; border: none; transition: 0.5s;}
+        .order .sec2 form .btn1:hover{filter: hue-rotate(-15deg); color: white; transition: 0.5s;}
+    </style>
+
+    <div class="order">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="sec1">
+                        <h2>Place Your Order</h2>
+                        <p>Fill in your details and we'll get your favorite fits delivered to your<br>doorstep.</p>
+                            <p><span>.</span>Free Shipping on order above $99</p>
+                            <p><span>.</span>Easy 7-day exchange</p>
+                            <p><span>.</span>Secure online payment and COD options</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sec2">
+                        <form action="">
+                               <label for="">Full Name</label><br>
+                               <input type="text" placeholder="Enter your Name"><br>
+                               <label for="">Email</label><br>
+                               <input type="text" placeholder="you2example.com"><br>
+                               <label for="">Phone</label><br>
+                               <input type="number" placeholder="+91-"><br>
+                               <label for="">Selact Product</label><br>
+                               <select name="" id="">
+                                    <option value="">Choose a Product</option>
+                                    <option value="">Foods</option>
+                                    <option value="">Mobils</option>
+                                    <option value="">Cloths</option>
+                               </select>
+                               <br>
+                               <label for="" class="size">Size</label>
+                               <select name="" id="" class="size1">
+                                <option value="">Select size</option>
+                               </select>
+                               <label for="">Quntity</label>
+                               <input type="text" value="1" class="qnt"><br>
+                               <label for="">Delivery Address</label><br>
+                               <textarea name="" id="" cols=30" rows="2" placeholder="House no, street, city,pincode"></textarea>
+                               <button class="btn1">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <style>
+        .myfooter{color: #8790a1; display: flex; align-items: center; height: 45px; font-size: 14px;}
+        .myfooter p{margin: 0px;}
+        .myfooter .nav{justify-content: end;}
+        .myfooter .nav li{margin-right: 15px;}
+        .myfooter .nav li a{text-decoration: none; color: #8790a1; transition: 0.3s;}
+        .myfooter .nav li a:hover{color: #fff; transition: 0.3s;}
+    </style>
+
+    <div class="myfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p>@ 2026 UrbanThreads Graments. All rights reserved</p>
+                </div>
+                <div class="col-4">
+                    <div class="text-end">
+                        <ul class="nav">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Order</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
